@@ -2,7 +2,6 @@ package com.hencoder.hencoderpracticedraw5.practice;
 
 import android.content.Context;
 import android.graphics.Canvas;
-import android.graphics.Color;
 import android.graphics.Paint;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.AppCompatImageView;
@@ -26,6 +25,8 @@ public class Practice06BeforeOnDrawForegroundView extends AppCompatImageView {
     {
         paint.setTextSize(60);
     }
+
+
 
     @Override
     public void onDrawForeground(Canvas canvas) {

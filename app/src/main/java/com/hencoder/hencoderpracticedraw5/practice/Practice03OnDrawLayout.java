@@ -26,12 +26,13 @@ public class Practice03OnDrawLayout extends LinearLayout {
 
     {
         // 在这里插入 setWillNotDraw(false) 以启用完整的绘制流程
+        setWillNotDraw(false);
     }
 
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-
+        //默认这里不会执行 会跳过ViewGroup的onDraw方法，需要通过setWillNotDraw(false)方法开启！
         pattern.draw(canvas);
     }
 
